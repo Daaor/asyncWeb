@@ -7,10 +7,10 @@ async function fetchUsers() {
   loading.style.display = "block";
 
   try {
-    const users = await fetch(url);
-    const results = await users.json();
+    const response = await fetch(url);
+    const users = await response.json();
 
-    results.forEach((userData)=>{
+    users.forEach((userData)=>{
       let newUser = document.createElement('div');
       newUser.className = "p-5 rounded-lg border border-gray-100 shadow-lg shadow-gray-300";
       newUser.innerHTML = `

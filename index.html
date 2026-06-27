@@ -7,10 +7,13 @@
     <title>async web</title>
   </head>
   <body class="min-w-screen">
-    <div id="loading" class="text-center mt-[15%]">
+    <input id="search" placeholder="Search Users" type="text" class="m-10 px-7 py-3 border border-gray-400 rounded-full">
+    <div id="loading" class="text-center">
       <div class="w-5 h-5 border-4 border-gray-300 border-t-gray-600 rounded-full animate-spin inline-block"></div>  <span>Loading</span>
     </div>
-    <div id="allUserId" class="grid grid-rows-auto grid-cols-1 gap-5 md:grid-cols-3 m-10"></div>
+
+
+    <div id="allUserId" class="grid grid-rows-auto grid-cols-1 gap-5 m-10 md:grid-cols-3"></div>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

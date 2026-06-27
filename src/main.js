@@ -19,7 +19,7 @@ function renderUsers(usersList){ // Handles creating of individual cards from th
     userCard.innerHTML = `
       <h2 class="text-xl font-bold text-center">${user.name}</h2>
       <p class="text-lg text-center pt-5">${user.email}</p>
-      <button class="deleteBtn px-4 py-2 rounded-full bg-red-300 border-none text-white hover:bg-red-600 hover:shadow-lg hover:-translate-y-1 transition-all duration-500 ease-in-out">Delete user</button>
+      <button class="deleteBtn px-4 py-2 rounded-full pt-5 bg-red-300 border-none text-white hover:bg-red-600 hover:shadow-lg hover:-translate-y-1 transition-all duration-500 ease-in-out">Delete user</button>
     `;
     userCard.className = "js-data-card border border-gray-300 rounded-lg shadow-md py-8 px-5";
     userCard.dataset.id = user.id;
